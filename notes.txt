@@ -1,0 +1,45 @@
+Database?
+----------
+A database is an onganized collection of data.
+example: Excel..
+
+Relational---> Stores data in tables(Rows and Columns)(SQL)(MySQL, PostgreSQL, Oracle)
+Non-relational---> Stroes data in Object like structures.(NoSQL)(MongoDB, MariaDB)
+
+SQL---> Structured Query Language.
+
+MySQL
+-----
+> mySQL is free, popular RDBMS(Relational Database Management System) used in web and software development.
+> Structured Query Language (SQL) is used to talk to the MYSQL data.
+
+SQL Basics - Syntax.
+---------------------
+SQL is not case-sensitive. But usually written in UPPERCASE for commands.
+SQL statement should end with ";".
+
+Datatypes
+-------------
+INT---> Whole Number.(age, roll number..)
+FLOAT---> Decimal Number, with less precision. 3.14, 1.2. (percentage, temp)
+DOUBLE---> Decimal Number, with high precision. 4.3244324343..(for price, money values)
+
+CHAR(10)---> fixed-length string. 
+VARCHAR(10)-->  Variable char length.
+TEXT--> Long text. (para).
+
+DATE---> Store date only
+TIME---> Time Only 
+DATETIME ---> Both 
+TIMESTAMP---> Both.. auto-updates
+
+commands
+------------
+
+to create a new database---> "CREATE DATABASE name"
+to mention which database is to be manipulated---> "USE name"
+
+to create a new table---> "CREATE TABLE name (col details)"
+to insert a data into a table---> "INSERT INTO name VALUES (45,'name',23),(34,'name',43)"
+
+to view the data---> "SELECT what FROM table name"
