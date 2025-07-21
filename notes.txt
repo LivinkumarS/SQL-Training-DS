@@ -31,7 +31,17 @@ TEXT--> Long text. (para).
 DATE---> Store date only
 TIME---> Time Only 
 DATETIME ---> Both 
-TIMESTAMP---> Both.. auto-updates
+TIMESTAMP---> Both.. auto-updates.
+
+Operators used in conditions:
+-----------------------------
+=(equal).
+!=(not equal).
+<,>,<=,>=
+BETWEEN, LIKE.
+
+AND, OR---> Used to combine two or more conditions
+NOT ---> used to invert the condition.
 
 commands
 ------------
@@ -43,3 +53,18 @@ to create a new table---> "CREATE TABLE name (col details)"
 to insert a data into a table---> "INSERT INTO name VALUES (45,'name',23),(34,'name',43)"
 
 to view the data---> "SELECT what FROM table name"
+to view the data with some condition--> SELECT what FROM table name WHERE condition
+
+to change the existing data---> UPDATE table_name SET cloumn=value, col=val WHERE condition;(SET sql_safe_update=0;(for bulk update)).
+
+to remove the data from a table---> DELETE FROM table_name WHERE condition.
+
+to select data with range---> BETWEEN num1 AND num2
+
+Like Pattern
+-------------
+to select  data by it's first lettr----> LIKE 'Letter%'
+to select  data by it's last lettr----> LIKE '%Letter'
+to select data by some char in middle ---> LIKE '%char%'
+
+
