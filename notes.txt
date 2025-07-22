@@ -28,6 +28,8 @@ CHAR(10)---> fixed-length string.
 VARCHAR(10)-->  Variable char length.
 TEXT--> Long text. (para).
 
+BOOLEAN---> True or False.
+
 DATE---> Store date only
 TIME---> Time Only 
 DATETIME ---> Both 
@@ -65,6 +67,14 @@ Like Pattern
 -------------
 to select  data by it's first lettr----> LIKE 'Letter%'
 to select  data by it's last lettr----> LIKE '%Letter'
-to select data by some char in middle ---> LIKE '%char%'
+to select data by some char in middle ---> LIKE '%char%'.
+
+Sorting
+--------
+to sort in Ascending--> ORDER BY col ASC.
+to sort in Descending--> ORDER BY col DESC.
+
+Limit the results---> LIMIT "number of data you want"
+to make off set ---> OFFSET "number of data";
 
 
