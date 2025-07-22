@@ -21,3 +21,13 @@ INSERT INTO actor_list (name, email, age, isMarried) VALUES ('Vijay Sethupathy',
 
 SELECT id,name,email,age,isMarried FROM actor_list;
 UPDATE actor_list SET age=32;
+
+
+CREATE TABLE samlpe_data(
+id INT PRIMARY KEY auto_increment,
+name VARCHAR(50) NOT NULL,
+gender ENUM('male','female','others') );
+
+INSERT INTO samlpe_data (name,gender) VALUE ('Vikram','male');
+
+SELECT * FROM samlpe_data;

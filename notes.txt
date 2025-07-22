@@ -27,6 +27,7 @@ DOUBLE---> Decimal Number, with high precision. 4.3244324343..(for price, money 
 CHAR(10)---> fixed-length string. 
 VARCHAR(10)-->  Variable char length.
 TEXT--> Long text. (para).
+ENUM---> String. it allows to store only one value from a predefined list
 
 BOOLEAN---> True or False.
 
