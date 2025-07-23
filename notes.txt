@@ -78,4 +78,18 @@ to sort in Descending--> ORDER BY col DESC.
 Limit the results---> LIMIT "number of data you want"
 to make off set ---> OFFSET "number of data";
 
+AS--> used to rename a column in results
 
+Functions in MySQL
+-------------------
+these are all some in-built methods used to perform operations on data and return a result.
+
+Numeric Functions---> ROUND()--> fractional-nearest whole number, CEIL()--> next whole number, FLOOR()---> prev whole number
+
+String Functions---> CONCAT()--> attach two strings into one, LENGTH()--> return length of that string, UPPER()---> turning a string into uppercase, LOWER---> turning a string into lowercase, SUBSTRING(string, start, length)---> extract a particular part from a string
+
+Date/Time Functions 
+------------------------
+NOW()---> Current Date and Time
+CURDATE()---> Current Date only
+DATEDIFF()--> Difference in days.
