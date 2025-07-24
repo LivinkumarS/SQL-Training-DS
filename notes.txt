@@ -64,6 +64,15 @@ to remove the data from a table---> DELETE FROM table_name WHERE condition.
 
 to select data with range---> BETWEEN num1 AND num2
 
+
+ALTERING Table
+---------------
+to add new column---> ALTER TABLE "table name" ADD colname INT;
+to modify the existing column--> ALTER TABLE "table name" MODIFY colname ;
+to create a Foreign key constraint --> ALTER TABLE "table name" ADD CONSTRAINT FOREIGN KEY () REFERENCES ()
+to remove a Foreign key constraint --> ALTER TABLE "table name" DROP FOREIGN KEY () REFERENCES ()
+
+
 Like Pattern
 -------------
 to select  data by it's first lettr----> LIKE 'Letter%'
@@ -93,3 +102,16 @@ Date/Time Functions
 NOW()---> Current Date and Time
 CURDATE()---> Current Date only
 DATEDIFF()--> Difference in days.
+
+
+Keys & constraints
+-------------------
+
+1)Primary Key---> Uniquely Identifies each row in table, Only One primary key in table.
+2)NOT NULL---> cannot enter null(we cannot leave this column empty)
+3)UNIQUE---> The value should not repeat.
+4)DEFAULT value--> Provides default value when no value is specified.
+5)AUTO_INCREMENT---> automatically Increment the value for each new row.
+
+6)Foreign Key ---> Used to link To Tables, a Foreign key in one table refers to the primary key in another table.
+
