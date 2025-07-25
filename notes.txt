@@ -115,3 +115,25 @@ Keys & constraints
 
 6)Foreign Key ---> Used to link To Tables, a Foreign key in one table refers to the primary key in another table.
 
+Joins in MySQL 
+--------------
+Join allows you to retrive data from two or more tables.
+
+Inner Join.
+-----------
+Returns only matching rows from both tables.
+
+INNER JOIN ON ref and foreign key detalis.
+ex: SELECT * FROM employee_list INNER JOIN salary_data ON salary_data.userID=employee_list.id;
+
+LEFT JOIN 
+----------
+Returns all the record from left table, and matches records from right table. NULL might appear
+ex: SELECT e.name, e.email, s.amount, e.experience FROM employee_list e LEFT JOIN salary_data s
+ON s.userID=e.id;
+
+RIGHT JOIN 
+------------
+Returns all the record from right table, and matches records from left table. NULL might appear
+ex: SELECT e.name, e.email, s.amount, e.experience FROM employee_list e RIGHT JOIN salary_data s
+ON s.userID=e.id;
