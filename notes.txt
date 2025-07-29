@@ -72,6 +72,12 @@ to modify the existing column--> ALTER TABLE "table name" MODIFY colname ;
 to create a Foreign key constraint --> ALTER TABLE "table name" ADD CONSTRAINT FOREIGN KEY () REFERENCES ()
 to remove a Foreign key constraint --> ALTER TABLE "table name" DROP FOREIGN KEY () REFERENCES ()
 
+DETELE TABLE or DB:
+--------------------
+to delete a table permanantly ---> DROP TABLE table_name;
+to delete a DB permanantly ---> DROP DATABASE db_name;
+
+
 
 Like Pattern
 -------------
@@ -137,3 +143,16 @@ RIGHT JOIN
 Returns all the record from right table, and matches records from left table. NULL might appear
 ex: SELECT e.name, e.email, s.amount, e.experience FROM employee_list e RIGHT JOIN salary_data s
 ON s.userID=e.id;
+
+
+
+Aggregate Functions
+--------------------
+perform calculations on a group of rows.
+
+1) COUNT() ---> simply counts no. of rows
+2) SUM() --> total sum of numeric col.
+3) AVG() ---> Average of numeric col.
+4) MAX() ---> highest value in a col.
+5) MIN() --> smallest value
+6) GROUP BY ---> Apply aggregate functions to group of rows 
