@@ -41,7 +41,7 @@ Operators used in conditions:
 =(equal).
 !=(not equal).
 <,>,<=,>=
-BETWEEN, LIKE.
+BETWEEN, LIKE, IN.
 
 AND, OR---> Used to combine two or more conditions
 NOT ---> used to invert the condition.
@@ -155,4 +155,27 @@ perform calculations on a group of rows.
 3) AVG() ---> Average of numeric col.
 4) MAX() ---> highest value in a col.
 5) MIN() --> smallest value
-6) GROUP BY ---> Apply aggregate functions to group of rows 
+6) GROUP BY ---> Apply aggregate functions to group of rows
+
+
+Subquery 
+---------
+Subquery is a Query inside another Query.
+
+it is used when you need a result from another query.
+
+Single row subquery.
+---------------------
+ex: select * from updated_price_list where price>(select avg(price) from updated_price_list);
+
+select * from updated_price_list where price>---> main query.
+(select avg(price) from updated_price_list)---> sub query.
+
+Multi-row subquery.
+-------------------
+ex: select name from employee_list where id in (select userId from salary_data where amount<(select avg(amount) from salary_data)); 
+ 
+subquery with joins.
+-----------------------
+ex: select * from employee_list e inner join salary_data s on e.id=s.userID where s.amount<(select avg(amount) from salary_data);
+
